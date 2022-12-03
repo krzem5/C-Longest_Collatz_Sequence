@@ -1,1 +1,1 @@
-# C - NAME
+# C - Longest Collatz Sequence
