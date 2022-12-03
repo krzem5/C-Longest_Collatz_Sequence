@@ -7,10 +7,10 @@
 
 
 #ifdef _MSC_VER
-#pragma intrinsic(_BitScanForward)
-static uint32_t inline __force_inline COUNT_TRAILING_ZEROS(uint64_t x){
+#pragma intrinsic(_BitScanForward64)
+static uint32_t inline COUNT_TRAILING_ZEROS(uint64_t x){
 	uint32_t out;
-	_BitScanForward(&out,x);
+	_BitScanForward64(&out,x);
 	return out;
 }
 #else
